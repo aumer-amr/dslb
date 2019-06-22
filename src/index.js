@@ -75,6 +75,10 @@ app.post('/notifyStreamStatus', (req, res) => {
 	res.send('200 ok')
 })
 
+app.get('/', (req, res) => {
+	res.send('Bye 🙆‍♂️')
+})
+
 // Handle 500 errors
 app.use((err, req, res, next) => {
 	logger.error('500 error occured: %s', err)
@@ -84,10 +88,6 @@ app.use((err, req, res, next) => {
 // Handle 404 errors
 app.use((req, res) => {
 	res.send('404 🕵️‍♂️ still looking')
-})
-
-app.get('/', (req, res) => {
-	res.send('Bye 🙆‍♂️')
 })
 
 app.listen(app.get('port'), () => {
