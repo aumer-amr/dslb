@@ -37,6 +37,14 @@
     "discordRoleId": {
       "description": "Discord role id",
       "value": ""
+    },
+    "loggerConsoleLevel": {
+      "description": "Log level, this can be left alone",
+      "value": "trace"
+    },
+    "loggerConsoleEnabled": {
+      "description": "Log to console, this can be left alone",
+      "value": "true"
     }
   }
 }
