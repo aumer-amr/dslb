@@ -10,10 +10,6 @@
     }
   },
   "env": {
-    "port": {
-      "description": "Port the application listens on",
-      "value": "5000"
-    },
     "host": {
       "description": "Hostname url, this will be 'https://<name>.herokuapp.com/'",
       "value": "https://<name>.herokuapp.com/"

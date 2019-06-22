@@ -12,9 +12,9 @@ const request = require('request')
 const dHelper = require('./lib/discordHelper')
 
 // Check if all enviroment variables are set
-;['port', 'host', 'twitchStreamerId', 'twitchClientId', 'discordBotToken', 'discordShoutoutChannelId', 'discordRoleId'].forEach(variableName => {
+;['PORT', 'host', 'twitchStreamerId', 'twitchClientId', 'discordBotToken', 'discordShoutoutChannelId', 'discordRoleId'].forEach(variableName => {
 	if (typeof process.env[variableName] === 'undefined' || process.env[variableName] === '') {
-		logger.error('Variable %s is unset')
+		logger.error('Variable %s is unset', variableName)
 		process.exit(1)
 	}
 })
@@ -35,7 +35,7 @@ dClient.on('message', message => {
 
 // Setup express
 const app = express()
-app.set('port', (process.env.port || 5000))
+app.set('port', (process.env.PORT || 5000))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use((req, res, next) => {
