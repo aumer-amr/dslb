@@ -1,0 +1,26 @@
+{
+  "name": "dslb",
+  "version": "0.7.0",
+  "description": "Discord Shoutout Lock Bot - A bot created to lock one channel while the streamer is streaming, and unlocks it when the user stops streaming",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint-fix": " eslint ./src --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
+  },
+  "author": "Dwaigon Aumer - dwaigon#1337",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
