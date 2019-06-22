@@ -21,7 +21,7 @@ With the new options available, i again suggest uploading an image. This will be
 Now open notepad or something similar where you can write stuff down. Press **Click to Reveal Token** and copy/write this down as discordBotToken.
 
 Again in the left menu, go to "Oauth2" setting.
-Here under **SCOPES** select **bot** only, and under **BOT PERMISSIONS** select **Manage Channels**, and press copy next to the URL that was generated. It should look like "https://discordapp.com/api/oauth2/authorize?client_id=000000000000000&permissions=16&scope=bot"
+Here under **SCOPES** select **bot** only, and under **BOT PERMISSIONS** select **Manage Channels** and **Manage Roles** (DISCORD FIX TIHS PLS), and press copy next to the URL that was generated. It should look like "https://discordapp.com/api/oauth2/authorize?client_id=000000000000000&permissions=16&scope=bot"
 
 For the next step, make sure your discord role on the discord server has **Administrator**. If you don't have this, give the link that was generator to someone who has.
 
