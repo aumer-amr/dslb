@@ -87,15 +87,17 @@ app.get('/', (req, res) => {
 	res.send('Bye 🙆‍♂️')
 })
 
-// Handle 500 errors
-app.use((err, req, res, next) => {
-	logger.error('500 error occured: %s', err)
-	res.send('500 sorry 🤷‍♂️')
+// Handle 404 errors
+app.use((req, res, next) => {
+	const err = new Error('404 thrown')
+	err.status = 404
+	next(err)
 })
 
-// Handle 404 errors
-app.use((req, res) => {
-	res.send('404 🕵️‍♂️ still looking')
+// Handle errors
+app.use((err, req, res, next) => {
+	logger.error((err.status || 500) + ' error occured: %s', err)
+	res.send((err.status || 500) + ' sorry 🤷‍♂️')
 })
 
 app.listen(app.get('port'), () => {
