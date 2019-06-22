@@ -1,0 +1,42 @@
+{
+	"name": "DSLB Bot",
+	"description": "Discord Shoutout Lock Bot - A bot created to lock one channel while the streamer is streaming, and unlocks it when the user stops streaming",
+	"repository": "https://github.com/DwaigonAumer/dslb",
+  "keywords": ["node", "express", "static"],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "env": {
+    "port": {
+      "description": "Port the application listens on",
+      "value": "5000"
+    },
+    "host": {
+      "description": "Hostname url, this can be found on your app setting page at 'Domain'",
+      "value": ""
+    },
+    "twitchStreamerId": {
+      "description": "Twitch streamer id",
+      "value": ""
+    },
+    "twitchClientId": {
+      "description": "Twitch client id",
+      "value": ""
+    },
+    "discordBotToken": {
+      "description": "Discord bot token",
+      "value": ""
+    },
+    "discordShoutoutChannelId": {
+      "description": "Discord shoutout channel id",
+      "value": ""
+    },
+    "discordRoleId": {
+      "description": "Discord role id",
+      "value": ""
+    }
+  }
+}
