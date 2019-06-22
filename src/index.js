@@ -75,6 +75,14 @@ app.post('/notifyStreamStatus', (req, res) => {
 	res.send('200 ok')
 })
 
+app.get('/notifyStreamStatus', (req, res) => {
+	if (typeof req.query['hub.challenge'] !== 'undefined') {
+		res.send(req.query['hub.challenge'])
+		return
+	}
+	res.send('200 ok')
+})
+
 app.get('/', (req, res) => {
 	res.send('Bye 🙆‍♂️')
 })
