@@ -15,8 +15,8 @@
       "value": "5000"
     },
     "host": {
-      "description": "Hostname url, this can be found on your app setting page at 'Domain'",
-      "value": ""
+      "description": "Hostname url, this will be 'https://<name>.herokuapp.com/'",
+      "value": "https://<name>.herokuapp.com/"
     },
     "twitchStreamerId": {
       "description": "Twitch streamer id",

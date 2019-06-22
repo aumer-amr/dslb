@@ -100,7 +100,7 @@ app.listen(app.get('port'), () => {
 	let url = 'https://api.twitch.tv/helix/webhooks/hub?'
 	url = url + 'hub.mode=subscribe&'
 	url = url + 'hub.topic=https://api.twitch.tv/helix/streams?user_id=' + process.env.twitchStreamerId + '&'
-	url = url + 'hub.callback=' + process.env.host + '&'
+	url = url + 'hub.callback=' + process.env.host + 'notifyStreamStatus&'
 	url = url + 'hub.lease_seconds=864000'
 
 	request({
